@@ -8,3 +8,4 @@ router.put("/:id",editRecipes) //edit recipe
 router.delete("/:id",deleteRecipes) //delete recipe
 
 module.exports=router;
+
