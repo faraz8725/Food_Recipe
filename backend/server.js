@@ -6,7 +6,8 @@ const PORT=process.env.PORT || 3000;
 const cors=require("cors")
 connectDB()
 app.use(express.json());
-app.use(cors())
+app.use(cors());
+app.use("/",require("./routes/user"))
 const routes=require("./routes/recipe1");
 app.use("/recipe",routes)
 app.listen(PORT,(err)=>{
